@@ -1,0 +1,2723 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: rgba(0,0,0,0.95);
+    background-size: cover;
+    overflow-y: scroll;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+span {
+    color: rgba(0,0,0,0.9);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+#header {
+    height: 62px;
+    width: 100%;
+    background: rgba(50,50,50,1);
+    position: fixed;
+    z-index: 2;
+    min-width: 770px;
+}
+
+.findlsnote .findtext{
+    position: relative;
+    bottom: 9px;
+}
+
+#header h1{
+    margin-top: 0;
+    color: rgba(255,255,255,0.95);
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 52px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#header a {
+    float: right;
+    font-size: 16px;
+    margin-right: 30px;
+    position: relative;
+    bottom: -20px;
+}
+
+#header .logo {
+    font-size: 45px;
+    bottom: -5px;
+}
+
+.headerlogimg {
+    width:35px;
+    height:35px;
+    display:inline-block;
+    border-radius:40px;
+}
+
+.headerspan {
+    position: relative;
+    bottom: 6px;
+    margin-left: 5px;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.main {
+    height: 92vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.menu {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding-left: 140px;
+    top: 80px;
+    position: sticky;
+}
+
+.menu ul {
+    padding: 0 0;
+    width: auto;
+}
+
+.menu ul li {
+    color:rgba(255,255,255,0.9);
+    background: rgba(50,50,50,1);
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all .2s linear;
+    border-radius:5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+}
+
+.likecolor:hover {
+    background-color: rgba(255, 84, 84,0.7);
+}
+
+.likecolorset{
+    background-color: rgba(255, 84, 84,0.7) !important;
+}
+
+.friendcolor:hover {
+   background-color: rgba(66, 167, 255,0.8);
+}
+
+.friendcolorset {
+   background-color: rgba(66, 167, 255,0.8) !important;
+}
+
+.notescolor:hover {
+    background-color: rgba(255, 183, 0, 0.8);
+}
+
+.notescolorset {
+    background-color: rgba(255, 183, 0, 0.8) !important;
+}
+
+.newscolor:hover {
+    background-color: rgba(194, 71, 255, 0.8);
+}
+
+.newscolorset {
+    background-color: rgba(194, 71, 255, 0.8) !important;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+#make:hover{
+    background-color: rgba(70,103,180,0.8);
+}
+
+.makeset {
+    background-color: rgba(70,103,180,0.8) !important;
+}
+
+#opendiary:hover {
+    background-color: rgba(102,0,255,0.5);
+}
+
+.openset {
+    background-color: rgba(102,0,255,0.5) !important;
+}
+
+.menu ul li:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.main1 {
+    padding:50px 0;
+    white-space:nowrap;
+}
+
+.box-line {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    height: auto;
+    background: rgba(255,255,255,1);
+    white-space:normal;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    transition: all .5s ease;
+    text-align: left;
+    position: relative;
+    border-radius: 2px;
+    word-break: break-all;
+}
+
+#boxheader img {
+    border-radius: 30px;
+    margin: 5px 5px;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.infoblock2 {
+    display: none;
+}
+
+#boxheader span {
+    font-size: 17px;
+    position: relative;
+    bottom: 9px;
+}
+
+.takeaphoto {
+    cursor: pointer;
+}
+
+.box-line hr {
+    margin-bottom: 0;
+}
+
+.box-line h1 {
+    color: rgba(0,0,0,0.8);
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    margin: 5px 10px;
+    word-break: break-word;
+}
+
+.box-line h2,.box-line h3,.box-line h4,.box-line h5,.box-line h6 {
+    color: rgba(0,0,0,0.8);
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    margin: 5px 10px;
+    word-break: break-word;
+}
+
+.box-line p span{
+    margin-top: 0;
+    color: #000;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    padding: 0;
+    font-size: 15px;
+    word-break: break-word;
+    line-height: 22px;
+}
+
+#boxheader .date {
+    font-size: 14px;
+    float: right;
+    position: relative;
+    top:13px;
+    right: 10px;
+    color: rgba(0,0,0,0.7);
+}
+
+#boxheader .deletenews {
+    font-size: 15px;
+    float: right;
+    position: relative;
+    top:7px;
+    right: 5px;
+    color: rgba(0,0,0,0.7);
+}
+
+
+
+@media only screen and (max-width: 1008px) {
+    .headerspan {
+        display: none;
+    }
+}
+
+#boxheader .lock {
+    font-size: 15px;
+    float: right;
+    position: relative;
+    top:7px;
+    right: 5px;
+    color: rgba(0,0,0,0.7);
+}
+
+#boxheader .lock img{
+    margin-left: 0;
+}
+
+.box-line p {
+    margin-top: 0;
+    color: #000;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    padding:0 10px;
+    margin-bottom: 0;
+    white-space: pre-wrap;
+    font-size: 15px;
+   /* line-height: 25px;
+    word-spacing: 2px;*/
+    word-break: break-word;
+    line-height: 22px;
+}
+
+.box-line p img {
+    width: 100%;
+}
+
+.box-line p a {
+    color: dodgerblue !important;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif !important;
+}
+
+.box-line p a:hover {
+    color: blue !important;
+}
+
+.box-line p a:visited {
+    color: rebeccapurple !important;
+}
+
+.tags {
+    width: 100%;
+    padding: 10px 10px;
+    padding-bottom: 11px !important;
+    box-sizing: border-box;
+    word-break: break-word;
+}
+
+.tags span {
+    color: rgba(0,0,0,0.6);
+    margin-right: 10px;
+}
+
+.info span {
+    font-size: 18px;
+    float: right;
+    padding-bottom: 6px;
+    margin-right: 10px;
+}
+.info img {
+    position: relative;
+    top:6px;
+    margin-top: 0;
+}
+
+.find input {
+    border: none;
+    background: rgba(50,50,50,1);
+    outline: none;
+    width: 250px;
+    position: relative;
+    bottom: 3px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color:rgba(255,255,255,1);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.find img {
+    position: relative;
+    top:2px;
+    margin: 3px 0 0 3px;
+    left: 4px;
+}
+
+.find {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(50,50,50,1);
+    border-radius: 2px;
+}
+
+.support {
+    display: none;
+}
+
+.shows {
+    position:absolute;
+    width:100%;
+    height:40px;
+    bottom:0;
+    left:0;
+    background: rgba(74, 74, 74,1);
+    box-shadow: 0 -20px 60px 15px white;
+    font-family: 'Roboto',sans-serif;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.suggest {
+    width: 298px;
+    height: auto;
+    background: rgba(50,50,50,1);
+    font-size: 16px;
+    color:rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+.suggest span {
+    color:rgba(255,255,255,1);
+    position: relative;
+    top:-10px;
+    left:10px;
+}
+
+.suggest h1 {
+    font-size: 15px;
+    font-weight: 100;
+    margin: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    color: rgba(255,255,255,0.6);
+    border-bottom: 1px solid grey;
+}
+
+.suggest ul img{
+    position: relative;
+    top:5px;
+}
+
+.suggest ul {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.suggest ul li {
+    border-bottom: 1px solid rgba(150,150,150,0.4);
+    padding: 10px 15px;
+    padding-left: 0;
+    cursor: default;
+    position: relative;
+}
+
+.whatselect {
+    width: 298px;
+    height: auto;
+    background: rgba(50,50,50,1);
+    font-size: 16px;
+    color:rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-top: 20px;
+    text-align: left;
+    border-radius: 2px;
+}
+
+.whatselect ul {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whatselect ul li {
+    padding: 10px 15px;
+    cursor: default;
+    position: relative;
+    transition: all .5s ease;
+    color: rgba(150,150,150,0.7);
+    cursor: pointer;
+}
+
+.liopen {
+    background: rgba(0,0,0,0.3);   
+    color: white !important;
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+
+.whatselect ul li:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.reblog {
+    padding: 10px 15px;   
+    color: rgba(0,0,0,0.7);
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 17px;
+}
+
+.reblog img{
+    position: relative;
+    right: 3px;
+    top:2px;
+}
+
+.suggest ul li:nth-last-child(1) {
+    border:none;
+}
+
+.whatselect ul li:nth-last-child(1) {
+    border-bottom:none;
+}
+
+.subscribe {
+    padding: 5px 10px;
+    border:1px solid grey;
+    float: right;
+    position: relative;
+    top:4px !important;
+    cursor: pointer;
+    transition: all .5s linear;
+    left:14px !important;
+}
+
+.subscribe:hover {
+    color:rgba(50,50,50,1);
+    background: white;
+}
+
+.makeanote {
+    width: 500px;
+    height: auto;
+    background: rgba(255,255,255,1);
+    white-space:normal;
+    transition: all .5s ease;
+    display: none;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.makeanote h1{
+    color: rgba(0,0,0,0.65);
+    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-top: 9px;
+    width: 460px;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.makeanote p{
+    color:rgba(0,0,0,0.7);
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 19px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.makeanote input {
+    border: none;
+    outline: none;
+    font-size: 23px;
+    color:rgba(0,0,0,0.7);
+    padding: 5px 10px;
+    width: 479px;
+}
+
+.makeanote textarea {
+    width: 479px;
+    border: none;
+    resize: none;
+    height: 120px;
+    padding: 5px 10px;
+    font-size: 17px;
+    outline: none;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+input[name="tag"] {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.makeanote .makeline span{
+    width: auto;
+    color:rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.8);
+    padding: 5px 10px;
+}
+
+#make img {
+    transition: all .5s ease;
+}
+
+.makeline {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    height: 40px;
+    padding: 10px 10px;
+    text-align: left;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.makeline span {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.makeline .close {
+    float: right;
+    position: relative;
+    bottom: 5px;
+}
+
+.enterdiar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+
+.select {
+    height: 70%;
+    overflow-x: auto;
+    padding-right: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 1100px;
+}
+
+.diar {
+    width: 250px;
+    height: 370px;
+    background: rgba(255,255,255,0.98);
+    overflow: hidden;
+    white-space:normal;
+    margin-top: 80px;
+    border-radius:0 0 2px 2px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    transition: all .5s linear;
+}
+
+.display {
+    display: block;
+    animation: show .5s linear;
+}
+
+.indiar {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border-bottom: 1px solid grey;
+    cursor: default;
+}
+
+.diar h1,.diar p{
+    display: inline-block;
+}
+
+.diar p {
+    font-size: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    padding: 0 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.diar h1{
+    font-size: 24px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: rgba(0,0,0,0.9);
+    margin: 5px 10px;
+    margin-bottom: 0;
+}
+
+.maked h1{
+    padding: 25px;
+    padding-top: 35px;
+    color: rgba(0,0,0,0.7);
+}
+
+#iconmaked {
+    position: relative;
+    top: 5px;
+    left:5px;
+}
+
+.makeadiar input:not([type="submit"]){
+    width: 90%;
+    height: 17px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.makeadiar input:nth-child(2){
+    font-size: 23px;
+    margin-top: 0;
+}
+
+
+.makeadiar input[type="submit"]{
+    color: rgba(0,0,0,0.9);
+    font-size: 18px;
+    position: relative;
+    top:5px;
+    border:1px solid rgba(0,0,0,0.8);
+    padding: 5px 20px;
+    border-radius: 4px;
+    transition: all .5s linear;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.makeadiar input[type="submit"]:hover {
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.8);
+}
+
+.infoblock {
+    display: none;
+}
+
+input[type="file" i] {
+    display: none;
+}
+
+.makeadiar form {
+    height: 55%;
+}
+
+.makeadiar textarea {
+    width: 90%;
+    height: 50px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.maked img:not(#iconmaked) {
+    width: 100%;
+    height: 120px;
+}
+
+.maked {
+    cursor: pointer;
+}
+
+.take a{
+    color: rgba(0,0,0,0.9);
+    font-size: 18px;
+    position: relative;
+    top:10px;
+    margin-left: 10px;
+    border:1px solid rgba(0,0,0,0.8);
+    padding: 5px 20px;
+    border-radius: 4px;
+    transition: all .5s linear;
+    text-align: center;
+}
+
+.take a:hover {
+    color: rgba(255,255,255,0.9);
+    background: rgba(0,0,0,0.8);
+}
+
+.redakt {
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    border-radius:30px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVDhP7ZA/DgFBHEYXV9Cg3DtQcgPxZ1eroXEBh1DjFi7gEFpXQEi02PV+my+yhWLMdhtf8jIz38y8TCYof5IkaUIMHVXFgmgEdzjBE9ba8kuaphGSB2yYV6EncVtHfktOeIEjtOhqjGeIdcw9OeGKeZ3xACbegn1FQ0fdkheqss7E9kLrh6rd8k1osbX6sSq3/IWfeAu5MNDFnaosrP2EFi7t4QYvXrxU5y9EUpFwBguw7MBPaOFiiNgyhTnrayGhBVGUKQkie7F9RV/bfkHQhQmEqkqfIHgD8LR6vN60BoAAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.bcb {
+       background-color: rgb(97, 184, 255) !important;
+}
+
+.delete {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVDhP7ZQxCsJAFETThthGBFtbz+A9tEgnCPYewQvYCN7E0tZLWAhWggiWiW9kYhFZNYKFwYHH5zuzI6y4UXOU53m3KIpxiXZb74kDCawr7OECR0/t1UziikdhxrCBMyzNAlL7qffSU075+FYQEoEJ7Lw+lXLKew3r66XMFUyhx4+01fS+sv9Rqe5rDn1KC03vG/v/0iaXjmAA+ifNPLWP7NcvfaU6pRmcIPxIIG6j5Vzmj8Ii3CF4gPJlCiFfubaPPhdB3d2QL7i/o1XkK+cjP6kougJeg0VcF99BGwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 40px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(255, 115, 115);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVDhP7ZQxCsJAFETThthGBFtbz+A9tEgnCPYewQvYCN7E0tZLWAhWggiWiW9kYhFZNYKFwYHH5zuzI6y4UXOU53m3KIpxiXZb74kDCawr7OECR0/t1UziikdhxrCBMyzNAlL7qffSU075+FYQEoEJ7Lw+lXLKew3r66XMFUyhx4+01fS+sv9Rqe5rDn1KC03vG/v/0iaXjmAA+ifNPLWP7NcvfaU6pRmcIPxIIG6j5Vzmj8Ii3CF4gPJlCiFfubaPPhdB3d2QL7i/o1XkK+cjP6kougJeg0VcF99BGwAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.change:hover{
+    background-color: rgb(97, 184, 255);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVDhP7ZA/DgFBHEYXV9Cg3DtQcgPxZ1eroXEBh1DjFi7gEFpXQEi02PV+my+yhWLMdhtf8jIz38y8TCYof5IkaUIMHVXFgmgEdzjBE9ba8kuaphGSB2yYV6EncVtHfktOeIEjtOhqjGeIdcw9OeGKeZ3xACbegn1FQ0fdkheqss7E9kLrh6rd8k1osbX6sSq3/IWfeAu5MNDFnaosrP2EFi7t4QYvXrxU5y9EUpFwBguw7MBPaOFiiNgyhTnrayGhBVGUKQkie7F9RV/bfkHQhQmEqkqfIHgD8LR6vN60BoAAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes slide {
+ from { width: 0; }
+ to { width: 250px; }
+}
+
+@keyframes scale {
+ from { transform:scale(0,0) }
+ to { transform:scale(1,1) }
+}
+
+@keyframes show {
+ from { opacity: 0; }
+ to { opacity: 1; }
+}
+
+@keyframes hide {
+ from { opacity: 1; }
+ to { opacity: 0; }
+}
+
+@keyframes rotate {
+ from { transform: rotate(0deg);}
+ to { transform: rotate(360deg); }
+}
+
+.formchange input{
+    width: 90%;
+    height: 10px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.formchange textarea{
+    width: 90%;
+    height: 48px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-family: 'Roboto Condensed',sans-serif;
+    resize: none;
+    overflow: auto;
+}
+
+
+#allbox {
+        white-space: normal;
+    width: 500px;
+    display: inline-block;
+}
+
+#makenote {
+    float: left;
+    position: relative;
+    bottom: 5px;
+    border-radius: 3px;
+}
+
+.notselected {
+    width: 200px;
+    height: 70px;
+    background: rgba(100,100,100,0.8);
+    border-radius: 10px;
+}
+
+.deleteanote {
+    width: auto;
+    padding: 2px 6px;
+    margin-left: 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.deleteanote:hover span {
+    color: rgba(0,0,0,1);
+}
+
+.deleteanote span {
+    position: relative;
+    bottom:4px;
+    left:1px;
+    transition: all .5s ease;
+}
+
+.newsnote {
+    width: auto;
+    padding: 2px 6px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.newsnote:hover span {
+    color: rgba(0,0,0,1);
+}
+
+.newsnote span {
+    position: relative;
+    bottom:4px;
+    left:1px;
+}
+
+.editnote {
+    width: auto;
+    padding: 2px 6px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.editnote:hover span {
+    color: rgba(0,0,0,1);
+}
+
+.editnote span {
+    position: relative;
+    bottom:4px;
+    left:1px;
+}
+
+.notselected h1 {
+    width: 100%;
+    color:rgba(200,200,200,1);
+    font-size: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.notetake {
+    padding-top: 10px;   
+}
+
+.tags {
+    padding-bottom: 5px;
+}
+
+.photo {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.allimage {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.takeaphoto2 {
+    width: 90%;
+    height: 100px;
+    border: 3px dashed grey;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.takeaphoto2 h1 {
+    margin-top: 25px;
+}
+
+.allinlikes {
+    width: auto;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 2px;
+    left: 4px;
+}
+
+.allinlikes img {
+    position: relative;
+    top:5px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.like {
+    padding: 3px !important;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+}
+
+.commenty {
+    padding: 3px !important;
+    position: relative;
+    left: 13px;
+    cursor: pointer;
+}
+
+.repost {
+    padding: 3px !important;
+    cursor: pointer;
+    position: relative;
+    left: 21px;
+}
+
+.likef {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 2px;
+    color: rgba(0,0,0,0.7);
+}
+
+.repf {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 2px;
+    color: rgba(0,0,0,0.7);
+}
+
+.comf {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 2px;
+}
+
+.number {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    top:8px;
+    left:10px;
+    letter-spacing: -1px;
+}
+
+.likes {
+    width: 100%;
+}
+
+.span {
+    color: rgba(60,60,60,0.7);
+}
+
+#likenum {
+    font-weight: bolder;
+    color: rgba(0,0,0,0.55);
+    padding-right: 1px;
+}
+
+#komnum {
+    font-weight: bolder;
+    color: rgba(0,0,0,0.7);
+    padding-right: 1px;
+}
+
+.blockcomments {
+    width: 100%;
+    height: auto;
+}
+
+.comment {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 10px;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: top;
+}
+
+.comment span {
+    
+    font-family: 'Roboto Condensed',sans-serif;
+    color: rgba(0,0,0,0.9);
+    font-size: 17px;
+    padding-left: 4px;
+}
+
+.comment p {
+    font-size: 15px;
+    width: 80%;
+    display: inline-block;
+    margin-top: 18px;
+    position: relative;
+    right: 2px;
+    padding-top: 0;
+    padding-bottom: 3px;
+    color: rgba(0,0,0,1);
+    vertical-align: top;
+}
+
+.commenttitle {
+    width: 89%;
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    top:8px;
+    padding-left: 4px;
+}
+
+.titledate {
+    position: relative;
+    bottom: 1px;
+    left: 3px;
+    font-weight: normal !important;
+    font-size: 13px !important;
+    color:rgba(0,0,0,0.5) !important;
+}
+
+.rewrite {
+    padding-left: 48px;
+    position: relative;
+    bottom: 6px;
+}
+
+.rewrite span {
+    font-size: 15px !important;
+    padding: 2px 7px 0 0;
+    color:rgba(0,0,0,0.5) !important;
+    position: relative;
+    right: 1px;
+}
+
+.sendcomment {
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+}
+
+.sendcomment img{
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+    vertical-align: top;
+    position: relative;
+    top:7px;
+}
+
+.sendcomment textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-top: 12px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 16px;
+    margin-left: 5px;
+    resize: none;
+    height: 25px;
+    color: rgba(0,0,0,0.7);
+    letter-spacing: 0;
+}
+
+.sendhide {
+    display: none;
+    height: 37px;
+}
+
+#formcomment {
+    width: 80%;
+    display: inline-block;
+}
+
+.sendcomment input{
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 14px;
+    color: rgba(255,255,255,0.9);
+    border: none;
+    background: rgba(0,0,0,0.8);
+    float: right;
+    position: relative;
+    left: 0;
+    border-radius: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.tolike {
+    width: auto;
+    height: auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-50px 0 0 -35px;
+    display: none;
+    transition: all 1s ease;
+}
+
+.avatarimg {
+    border-radius: 30px;
+    margin: 5px 5px;
+    margin-bottom: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+}
+
+.dlike {
+    padding: 15px 15px;
+    font-family: 'Roboto Condensed';
+    border: 1px solid grey;
+    color: white;
+    width: 100%;
+    border-radius: 1px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#findform {
+    position: relative;
+}
+
+.findnote {
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,1);
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    overflow: hidden;
+    white-space: normal;
+    top: 40px;
+}
+
+.findnote span {
+    color: black;
+}
+
+.findnote h1 {
+    font-size: 16px;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Roboto Condensed';
+    font-weight: 100;
+}
+
+.imgfind{
+    left: -7px !important;
+    top: 4px !important;
+}
+
+.findnote ul {
+    width: 100%;
+    padding-left: 0;
+}
+
+.findnote ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.findnote a {
+    color: black !important;
+}
+
+.notfound {
+    width: auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    border: 1px solid white;
+}
+
+.findnote ul li:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+#findlsform {
+    position: relative;
+}
+
+.findlsnote {
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,1);
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    overflow: hidden;
+    white-space: normal;
+    top: 40px;
+}
+
+.findlsnote span {
+    color: black;
+}
+
+.findlsnote h1 {
+    font-size: 16px !important;;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Roboto Condensed' !important;;
+    font-weight: 100;
+    color: black !important;
+    display: block !important;
+}
+
+.imgfind{
+    left: -7px !important;
+    top: 4px !important;
+}
+
+.findlsnote ul {
+    width: 100%;
+    padding-left: 0;
+}
+
+.findlsnote ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.findlsnote a {
+    color: black !important;
+    margin-right: 0 !important;
+    position: static !important;
+    float: none !important;
+}
+
+.notfound {
+    width: auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    border: 1px solid white;
+}
+
+.findlsnote ul li:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.following {
+    display:inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    float: right;
+    border-radius: 2px;
+    border: 1px solid rgba(105,105,105,0.25);
+    background: rgba(0,0,0,0.2);
+    padding: 5px 5px;
+}
+
+.following img {
+    position: relative;
+    top: 3px !important;
+    right: 3px;
+}
+
+.userlogin {
+    color: rgba(255,255,255,0.8);
+}
+
+
+.usersodline h1 {
+    font-weight: bold;
+    border: none;
+}
+
+.following a {
+    padding: 5px 10px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+}
+
+.delsubsc {
+    border: 1px solid grey;
+    position: relative;
+    padding: 5px 10px !important;
+    top: 6px !important;
+    left: 15px !important;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.delsubsc img{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 4px !important;
+    right: 3px !important;
+}
+
+.deleditfon {
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition:all .5s ease;
+}
+
+.deleteedit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.deleditfon:hover {
+    opacity: 1;
+}
+
+.split {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.deleteconfirm {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 3;
+    text-align: center;
+    animation: show 1s ease 1;
+}
+
+.deleteconfirm h1 {
+    color:white;
+    font-family: 'Roboto Condensed';
+    font-size: 24px;
+}
+
+.selectdel {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top:40%;
+    left: 0;
+    margin: auto;
+}
+
+.deleteconfirm span {
+    color:white;
+    padding: 10px 15px;
+    font-size: 18px;
+    background: rgba(255, 84, 84, 0.87);
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    right: 10px;
+}
+
+.deleteconfirm span img{
+    position: relative;
+    top:3px;
+    right: 2px;
+}
+
+.back {
+    background: rgba(180,180,180,1) !important;
+    margin-left: 20px;
+}
+
+.notselecteddiar {
+    background: rgba(100,100,100,0.7) !important;
+}
+
+.category {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.9);
+    z-index: 2;
+}
+
+.selectcat {
+    height: 50%;
+    overflow-x: auto;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.selectcat h1{
+    color: white;
+    font-family: "Roboto";
+    margin-bottom: 40px;
+}
+
+.circle {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgba(255,255,255,0.4);
+    display: inline-block;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 4px;
+}
+
+.circle:hover {
+    background: white;
+}
+
+.circle span {
+    position: relative;
+    top:14px;
+    font-weight: bold;
+    color: white;
+}
+
+.circle:hover span {
+    color: rgba(0,0,0,0.7);   
+}
+
+.lineselect {
+    overflow: hidden;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+    width:498px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: 1px solid rgba(255,255,255,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-radius: 1px;
+    padding-top: 10px;
+}
+
+.lineselect span {
+    color: rgba(255,255,255,0.7);
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.lineselect span:hover {
+    color: white;
+}
+
+.avatarselect {
+    bottom: -16px !important;
+    margin-left: 10px; 
+}
+
+.avatarselect img{
+    border-radius: 100px;
+}
+
+.findls input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 250px;
+    position: relative;
+    bottom: 1px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color:rgba(255,255,255,1);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.findls img {
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+.findls {
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(30,30,30,0.8);
+    border-radius: 2px;
+    position: relative;
+    top:17px;
+    border-radius: 20px;
+}
+
+.messagecount {
+    position: absolute;
+    top: -13px;
+    right: -5px;
+    padding: 1px 5px;
+    font-size: 12px;
+    background: rgba(255, 84, 84, 1);
+    border-radius: 100px;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.notifcount{
+    position: absolute;
+    top: -13px;
+    right: -5px;
+    padding: 1px 5px;
+    font-size: 12px;
+    background: rgba(255, 84, 84, 1);
+    border-radius: 100px;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.notifbox{
+    position: fixed;
+    width: 300px;
+    height: auto;
+    right: 150px;
+    top: 65px;
+    background: white;
+    border-radius: 0 0 3px 3px;
+    z-index: 2;
+    text-align: left;
+    display: none;
+}
+
+.notifbox img{
+    border-radius: 60px;
+}
+
+.notifbox ul{ 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.notifbox li{ 
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.star{ 
+    vertical-align: top;
+    color:rgba(0,0,0,0.7);
+    font-family: 'Roboto',sans-serif;
+    left: 5px;
+    font-size: 14px;
+    width: 310px;
+    max-width: 220px;
+    word-break: break-word;
+}
+
+.notifbox div{ 
+    display: inline-block;
+}
+
+.noth1 {
+    position: relative;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding-bottom: 10px !important;
+    font-size: 16px;
+    font-family: 'Roboto Condensed',sans-serif;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.noth1 span{
+    position: absolute;
+    right: 10px;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    top: 12px;
+    font-family: 'Roboto Condensed',sans-serif; 
+}
+
+.userlike {
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+}
+
+.userrepost {
+    position: absolute;
+    bottom: -7px;
+    right: -4px;
+}
+
+.userbox{
+    position: fixed;
+    width: auto;
+    height: 0;
+    right: 55px;
+    top: 65px;
+    background: white;
+    border-radius: 0 0 3px 3px;
+    z-index: 2;
+    text-align: left;
+    overflow: hidden;
+    transition: all .5s ease;
+    border: 1px solid rgba(150,150,150,0.2);
+    visibility: hidden;
+}
+
+.userboxshow {
+    visibility: visible;
+    height: 238px;
+}
+
+.userbox span {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+.userbox img{
+    border-radius: 60px;
+}
+
+.userbox ul{ 
+    padding: 0 10px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.userbox h4 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    padding: 5px 0;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.userbox li{ 
+    padding: 10px 3px;
+    padding-bottom: 5px;
+    font-family: 'Roboto',sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.userbox li:hover{ 
+    background: rgba(150,150,150,0.1);
+}
+
+.userbox span {
+    color: rgba(0,0,0,0.6);
+    position: relative;
+    bottom: 5px;
+}
+
+.userbox span a{
+    color: rgba(0,0,0,0.6);
+}
+
+.comanswer {
+    position: relative;
+    top: 9px;
+    color:rgba(0,0,0,0.6);
+}
+
+.comanswerspan{
+    color:rgba(0,0,0,0.8);
+    font-weight: bold;
+    border: 1px solid rgba(50,50,50,0.5);
+    padding: 2px 6px;
+    border-radius: 20px;
+}
+
+.comanswerspandelete img{
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 5px;
+}
+
+.commentnot {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+}
+
+.commenttitle img{
+    width: auto;
+    height: auto;
+    position: relative;
+    bottom: 3px;
+    display: none;
+}
+
+.delcomm {
+    float: right;
+    padding-right: 8px;
+    position: relative;
+    top:3px;
+}
+
+.comment:hover .delcomm img{
+    display: block;
+}
+
+.comlike {
+    float: right;
+    position: relative;
+    left: 15px;
+    bottom: 2px;
+}
+
+.comment hr {
+    width: 100%;
+}
+
+.rewrite .comlike img{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.likecomnum {
+    font-weight: bold !important;
+    padding-right: 3px !important;
+}
+
+.comimgmylog {
+    border-radius: 40px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+    vertical-align: top;
+}
+
+.comimglog {
+    border-radius: 40px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.help {
+    position: absolute;
+    display: inline-block;
+    width: max-content;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed',sans-serif; 
+    border-radius: 3px;
+    z-index: 3;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.helpdisturn {
+    bottom: -1px;
+    left: -125px;
+    display: none;
+}
+
+.helpdel {
+    bottom: 0;
+    left: -115px;
+    display: none;
+}
+
+.helplike {
+    bottom: 25px;
+    left: -28px;
+    display: none;
+}
+
+.helprepost {
+    bottom: 25px;
+    left: 53px;
+    display: none;
+}
+
+.user {
+    width: 250px;
+    height: auto;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    left: -120px;
+    top: 40px;
+    z-index: 3;
+    display: none;
+    cursor: default;
+}
+
+.usercover {
+    width: 100%;
+    height: 120px;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+}
+
+.usercover .backfon {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background: rgba(0,0,0,0.2);
+}
+
+.userph {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: absolute;
+    top: 85px;
+    left: 35px;
+    border: 2px solid white;
+    animation: scale 0.7s ease;
+}
+
+.usersubscline {
+    width: 100%;
+    color: black;
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.usersubscline span{
+    color: black;
+    position: relative;
+    left: 0 !important;
+    top:0 !important;
+}
+
+.usersubsc {
+    text-align: left;
+    width: auto;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Roboto Condensed',sans-serif !important;
+}
+
+.usersubsc span{
+    font-size: 12px !important;
+    font-family: 'Roboto',sans-serif !important;
+}
+
+.allusbox {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.userboxsub {
+    width: auto;
+    color: rgba(0,0,0,0.7);
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-weight: bold;
+    border: 1px solid rgba(50,50,50,0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed',sans-serif !important;
+}
+
+.usersubline {
+    width: 100%;
+    height: 50px;
+}
+
+.usersodline {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: black;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.usersodline h1 {
+    margin: 0;
+    color: rgba(0,0,0,0.7) !important;
+    font-family: 'Roboto',sans-serif !important;
+    font-size: 16px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.usersodline span{
+    top:3px;
+    left: 0;
+}
+
+.usersodline span a{
+    color: rgba(0,0,0,0.5) !important;
+    font-size: 16px !important;
+    font-family: 'Roboto Condensed',sans-serif !important;
+}
+
+.usersodline span a:hover{
+    color: rgba(0,0,0,0.5) !important;
+}
+
+.usersodline span a:visited{
+    color: rgba(0,0,0,0.5) !important;
+    font-size: 16px !important;
+}
+
+.usersodline p {
+    margin: 0;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px !important;
+    white-space: normal !important;
+    line-height: normal !important;
+    word-spacing: normal !important;
+    padding: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.userinfoline {
+    width: 100%;
+    height: 60px;
+}
+
+.coverus {
+    width: 100%;
+    position: absolute;
+    top:-5px;
+    height: 10px;
+}
+
+.more {
+    font-size: 15px !important;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif !important;
+    color: rgb(46, 63, 255) !important;
+    cursor:pointer;
+}
+
+.morecom {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.morecom span {
+    padding: 5px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.morecom span:hover {
+    background: rgba(50,50,50,0.3);
+    color: rgba(250,250,250,0.7);
+}
+
+.repost:hover .helprepost{
+    display: block;
+    animation-name: show;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
+}
+
+.lidiarspin {
+    float: right;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 6px;
+    overflow: hidden;
+    left: 10px;
+}
+
+.linewsspin {
+    float: right;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 6px;
+    overflow: hidden;
+    left: 10px;
+}
+
+.lilikespin {
+    float: right;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 6px;
+    overflow: hidden;
+    left: 10px;
+}
+
+.lifriendsspin {
+    float: right;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 6px;
+    overflow: hidden;
+    left: 10px;
+}
+
+
+.like:hover .helplike{
+    display: block;
+    animation-name: show;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.edit {
+    position: relative;
+    left: 20px;
+}
+
+.nonenot {
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+    color: rgba(195,195,195,0.8);
+    font-size: 17px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.repostinfo {
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin:-50px 0 0 -135px;
+    background: rgba(30,30,30,1);
+    z-index: 1;
+    width: auto;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 2px;
+    transition: all .5s ease;
+}
+
+.repostinfo p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(225,225,225,1);
+    font-size: 17px;
+    margin: 0;
+}
+
+
+.deletenews:hover .helpdisturn {
+    display: block;
+    animation-name: show;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.tagsli {
+    word-break: break-word;
+    white-space: normal;
+    padding-bottom: 5px;
+    color: rgba(200,200,200,0.8);
+}
+
+.tagsli ul li{
+    padding-top: 5px;
+    padding-right:10px;
+    padding-left:0;
+    padding-bottom:0;
+    display: inline-block;
+    font-size: 15px;
+    border: none;
+}
+
+.hash {
+    margin-right: 5px !important;
+}
+
+.editable {
+    position: relative;
+    text-align: left;
+    cursor: text;
+}
+
+.contented {
+    display: inline-block;
+    width: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.5);
+    word-break: break-word;
+    white-space: normal;
+}
+
+.notephoto img{
+    position: relative;
+    top:2px;
+}
+
+.maketags {
+    width: auto;
+    min-width: 20px;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 5px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.5);
+    outline: none;
+    background: transparent;
+    z-index: 2;
+    display: inline-block;
+}
+
+.placehold {
+    color: rgba(0,0,0,0.5);
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tagg {
+    padding: 5px;
+    padding-bottom: 0;
+    padding-left: 0;
+    display: inline-block;
+    width: auto;
+}
+
+.alltags {
+    background: transparent !important;
+    color: rgba(0,0,0,0.5) !important;
+    padding: 0 !important;
+    
+}
+
+[contenteditable=true]:empty:after {
+  content: attr(placeholder);
+}
+
+.deletenews:hover .helpdel {
+    display: block;
+    animation-name: show;
+    animation-duration:1s ;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.box-line ul li:before {
+     font-weight: 400;
+     color: grey; /* Цвет маркера */
+     content: "•"; /* Маркер */
+     padding-right: 7px; /* Отступ от маркера до текста */
+}
+
+.box-line ol li {
+     list-style-type: decimal;
+     word-break: break-word;
+}
+
+.box-line ol {
+    padding-right: 40px;
+}
+
+.box-line li {
+    font-size: 15px;
+    font-family: 'Roboto';
+}
+
+.box-line ul {
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.star a {
+    color: rgba(0,0,0,0.7) !important;
+    font-family: 'Roboto',sans-serif;
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+.scroolup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.warning {
+    width: auto;
+    padding: 5px 10px;
+    background: rgba(255, 84, 84, 0.87);
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -150px;
+    transition: all .5s ease;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.ql-editor span {
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif !important;
+    padding: 0;
+    font-size: 15px;
+}
+
+.ql-editor p {
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif !important;
+    padding: 0;
+    font-size: 15px;
+    color: #000;
+}
+
+.ql-editor {
+    color: #000;
+}
+
+.ql-editor ul li, .ql-editor ol li {
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif !important;
+    padding: 0 !important;
+    font-size: 15px !important;
+}
+
+.ql-editor ul, .ql-editor ol {
+    padding: 0 40px !important;
+    margin-bottom: 16px !important;
+}
+
+.getmessage {
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    width: 350px;
+    height: 70px;
+    background: #333333;
+    border-radius: 3px;
+    text-align: left;
+    z-index: 100;
+    border: 1px solid rgba(255,255,255,0.15);
+    cursor: pointer;
+    width: auto;
+}
+
+.getmessage div {
+    display: inline-block;
+}
+
+.favatar {
+    background: url(avatar/24363a3f0468962b5a9cd01d544d927b.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    position:relative;
+    top: 10px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.fromgetavatar {
+    height: 100%;
+    padding-left: 10px;
+}
+
+.fromget {
+    height: 100%;
+    vertical-align: top;
+}
+
+.fcontent {
+    font-family: 'Roboto Condensed','Open Sans','Helvetica Neue',sans-serif !important;
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    position: relative;
+    top: 16px;
+    width: 250px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.fcontent span {
+    color: #8aa3ff;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.black {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 11;
+}
+
+.black2 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 11;
+}
+
+#shownotes {
+    cursor: pointer;
+}
+
+.block {
+    display: block !important;
+}
+
+.allnote {
+    display: none;
+    z-index: 11;
+}
+
+.notecontent {
+    position: fixed;
+    width: 500px;
+    height: 600px;
+    background: white;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -250px;
+    z-index: 11;
+    overflow-y: scroll;
+    text-align: left;
+    word-break: break-word;
+    white-space: normal;
+    border-radius: 2px;
+}
+
+.notecontent h1{
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    padding: 15px 25px;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.05);
+}
+
+.notecontent .mainnote span{
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    font-size: 15px;
+    color: rgba(0,0,0,0.8);
+}
+
+.notecontent select {
+    margin-top: 3px;
+    width: 50%;
+    border: 1px solid rgba(150,150,150,0.3);
+    padding: 5px 10px;
+    border-radius: 2px;
+    outline: none;
+    color: rgba(0,0,0,0.7);
+}
+
+.notecontent input {
+    margin-top: 3px;
+    width: 50%;
+    border: 1px solid rgba(150,150,150,0.3);
+    padding: 5px 10px;
+    border-radius: 2px;
+    outline: none;
+    color: rgba(0,0,0,0.7);
+}
+
+.notecontent a {
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.notecontent textarea {
+    margin-bottom: 10px;
+    margin-top: 3px;
+    width: 70%;
+    height: 150px;
+    border: 1px solid rgba(150,150,150,0.3);
+    padding: 5px 10px;
+    border-radius: 2px;
+    outline: none;
+    color: rgba(0,0,0,0.8);
+    resize: none;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    font-size: 16px;
+}
+
+.notecontent option {
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    font-size: 14px;
+    padding: 10px 0;
+    color: rgba(0,0,0,0.7);
+}
+
+.mainnote {
+    padding: 15px 15px;
+}
+
+.mainnote ul {
+    padding: 0;
+}
+.mainnote .star {
+    width: 300px;
+    max-width: 300px;
+    padding-top: 1px;
+}
+
+.mainnote ul li {
+    margin-bottom: 15px;
+}
+
+.closenotes {
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    float: right;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 13px;
+    position: relative;
+    top:3px;
+    cursor: pointer;
+}
+
+.morem {
+    width: auto;
+    height: 0;
+    background: rgba(253,253,253,1);
+    border-radius: 4px;
+    position: absolute;
+    right: 38px;
+    top: 20px;
+    box-shadow: border-box;
+    z-index: 10;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.moremslide {
+    border: 1px solid rgba(200,200,200,0.2);
+    height: 70px;
+    padding: 5px 10px;
+}
+
+.morem ul{
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+    font-size: 16px;
+}
+
+.morem ul li{
+    margin: 10px 0;
+}
+
+.morem input{
+    padding: 0;
+    width: auto;
+    text-align: left;
+    position: relative;
+    top: 1px;
+}
+
+.mainnote .userlike {
+    bottom: -6px;
+}
+
+.counter {
+    float: right;
+    position: relative;
+    top: 12px;
+    font-size: 13px;
+    color: rgba(0,0,0,0.7);
+    font-family: 'Roboto','Open Sans','Helvetica Neue',sans-serif;
+}
+
+#countword {
+    color: rgba(0,0,0,0.7);
+}
+
+::-webkit-input-placeholder {color: rgba(255,255,255,0.3);transition: all .5s linear;}
+::-moz-placeholder          {color: rgba(255,255,255,0.3);transition: all .5s linear;}/* Firefox 19+ */
+:-moz-placeholder           {color: rgba(255,255,255,0.3);transition: all .5s linear;}/* Firefox 18- */
+:-ms-input-placeholder      {color: rgba(255,255,255,0.3);transition: all .5s linear;}
+
+input:focus::-webkit-input-placeholder {color: rgba(255,255,255,0.1);}
+input:focus::-moz-placeholder          {color: rgba(255,255,255,0.1);}/* Firefox 19+ */
+input:focus:-moz-placeholder           {color: rgba(255,255,255,0.1);}/* Firefox 18- */
+input:focus:-ms-input-placeholder      {color: rgba(255,255,255,0.1);}
+
+.makeanote input::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.4) !important;
+}
+
+.makeanote input[type="file"] {
+    display: none;
+}
+
+.makeanote textarea::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.4) !important;
+}
+
+.makeanote textarea:focus::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.1) !important;
+}
+
+.sendcomment textarea::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.4) !important;
+}
+
+.sendcomment textarea:focus::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.1) !important;
+}
+
+.makeanoteopen {
+    display: block !important;
+    animation: show 1s ease;
+}
+
+.makeadiar input::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.4) !important;
+}
+.makeadiar input:focus::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.1) !important;
+}
+
+.makeadiar textarea::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.4) !important;
+}
+.makeadiar textarea:focus::-webkit-input-placeholder {
+    color:rgba(0,0,0,0.1) !important;
+}
+
+.ql-tooltip-editor input::-webkit-input-placeholder {
+    color:rgba(255,255,255,0.4) !important;
+}

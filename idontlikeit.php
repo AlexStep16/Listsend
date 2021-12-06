@@ -1,0 +1,19 @@
+<?php
+session_start();
+if(isset($_GET['id'])) {
+            $conn = new mysqli('localhost', 'People', '123456', 'main');
+            if ($conn->connect_error) die($conn->connect_error);
+            $emailfor = str_replace('.', '', $_SESSION['email']);
+            $emailfor = str_replace('@', '', $emailfor);
+            $_GET['id'] = (int)$_GET['id'];
+            $_GET['id'] = strip_tags($_GET['id']);
+            $_GET['id'] = htmlspecialchars($_GET['id']);
+            $_GET['id'] = addslashes($_GET['id']);
+            $query = "SELECT login from news WHERE id='".$_GET['id']."'"; 
+            $result = $conn->query($query);
+            $result->data_seek(0);
+            $login = $result->fetch_array()['login'];
+            $query = "INSERT into dislike(login,noteid,who) VALUES('".$_SESSION['login']."','".$_GET['id']."','".$login."')"; 
+            $result = $conn->query($query);
+    }
+?>

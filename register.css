@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(5829c035ca2f7.jpg);
+    background-size: cover;
+}
+
+input[type="submit"] {
+    width: 324px;
+    border: none;
+    background: rgba(50,50,50,1);
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed',sans-serif; 
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 0 0 2px 2px;
+}
+
+input:not([type="submit"]) {
+    background: white;
+    outline: none;
+    border: 2px solid white;
+    width: 300px;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: rgba(0,0,0,0.8);
+    font-family: 'Roboto Condensed',sans-serif;
+    vertical-align: top;
+}
+
+h1 {
+    color: rgba(250,250,250,0.9);
+    margin: 0;
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-bottom: 10px;
+    font-size: 35px;
+    
+}
+
+#input1 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px 2px 0 0;
+}
+
+#input2 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    
+}
+
+#input3 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px 2px 0 0;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -150px;
+}
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.none {
+    width: 304px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px !important;
+    font-family: 'Roboto Condensed' !important;
+    text-align: center;
+    background: rgba(255, 84, 84, 0.87);
+    position:absolute;
+    bottom: -30px;
+    border-radius: 3px;
+    transition: all .5s ease;
+    display: inline-block;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.form3 {
+    position: relative;
+    z-index: 3;
+}
+
+.form2 {
+    position: relative;
+    z-index: 3;
+}
+
+#header a {
+    float: left;
+    border: 1px solid white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 2px;
+    transition: all .5s ease;
+    margin-left: 20px;
+}
+
+.main a {
+    margin-right: 20px;
+}
+
+#header a:hover {
+    color: rgba(30,30,30,0.9);
+    background: rgba(255,255,255,1);
+}
+
+.emailwrong {
+    transition: all .5s ease;
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 0;
+    height: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    top:7px;
+}
+
+.emailwrongenter {
+    transition: all .5s ease;
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 0;
+    height: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    top:7px;
+}
+
+
+.loginwrong {
+    transition: all .5s ease;
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 0;
+    height: 20px;
+    font-family: 'Roboto Condensed',sans-serif;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    top:7px;
+}
+
+
+.form2 {
+    height: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+    
+}
+.form3 {
+    height: 200px;
+    transition: all 1s ease;
+    overflow: hidden;
+    
+}

@@ -1,0 +1,451 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.9);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url(vecher-noch-svet-doroga-vyderzhka-zima-sneg-les-gory1.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    background-position: center;
+    position: fixed;
+    transition: all 0.7s ease;
+    top: 0;
+}
+
+.main a {
+    margin-right: 20px;
+}
+
+.main h1 {
+    color: rgba(255,255,255,0.9);
+    margin-top:0px;
+    font-size:70px;
+    padding-top:0;
+    text-align:center;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    margin-bottom:0;
+    font-family: "Play",sans-serif;
+}
+
+.main div {
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+.content {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -155px;
+}
+
+input:not([type="submit"]) {
+    background: white;
+    outline: none;
+    border: 2px solid white;
+    width: 300px;
+    font-size: 17px;
+    padding: 10px 10px;
+    color: rgba(0,0,0,0.8);
+    font-family: 'Roboto Condensed',sans-serif;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+#input1 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-radius: 5px 5px 0 0;
+}
+
+
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+input[type="submit"] {
+    width: 300px;
+    border: none;
+    background: rgba(50,50,50,1);
+    border-radius: 2px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed',sans-serif; 
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+}
+
+.findls img {
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+.main2 {
+    background: #191919;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    transition: all 0.7s ease;
+}
+
+.a {
+    position: fixed;
+    top: 100vh;
+}
+
+.b {
+    position: fixed;
+    top: 100vh;
+}
+
+@keyframes scale {
+ from { transform:scale(0,0) }
+ to { transform:scale(1,1) }
+}
+
+.c {
+    position: fixed;
+    top: 100vh;
+    background-color: #ff9429;
+}
+
+.main2 h1 {
+    margin-top: 0;
+    color: rgba(240,240,240,1);
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Roboto Condensed',sans-serif; 
+    margin-bottom: 10px;
+}
+
+.content2 {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -150px 0 0 -300px;
+    overflow: hidden;
+    display: inline-block;
+    width: 600px;
+    text-align: center;
+}
+
+.content2 p{
+    color: rgba(250,250,250,1);
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    margin-top: 0;
+    padding: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+#header {
+    height: 62px;
+    width: 100%;
+    background: rgba(50,50,50,0);
+    z-index: 2;
+    position: fixed;
+}
+
+.findlsnote .findtext{
+    position: relative;
+    bottom: 9px;
+}
+
+#header h1{
+    margin-top: 0;
+    color: rgba(255,255,255,0.95);
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 52px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#header a {
+    float: right;
+    font-size: 16px;
+    margin-right: 30px;
+    position: relative;
+    bottom: -20px;
+}
+
+#header .logo {
+    font-size: 45px;
+    bottom: -5px;
+}
+
+.headerlogimg {
+    width:35px;
+    height:35px;
+    display:inline-block;
+    border-radius:40px;
+}
+
+.headerspan {
+    position: relative;
+    bottom: -3px;
+    margin-left: 5px;
+    color: rgba(255,255,255,0.9) !important;
+    border: 1px solid rgba(255,255,255,0.9);
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+#findlsform {
+    position: relative;
+}
+
+.findlsnote {
+    width: 100%;
+    height: auto;
+    background: rgba(255,255,255,1);
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    overflow: hidden;
+    white-space: normal;
+    top: 40px;
+}
+
+.findlsnote span {
+    color: black;
+}
+
+.findlsnote h1 {
+    font-size: 16px !important;;
+    margin: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Roboto Condensed' !important;;
+    font-weight: 100;
+    color: black !important;
+    display: block !important;
+}
+
+.imgfind{
+    left: -7px !important;
+    top: 4px !important;
+}
+
+.findls input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 250px;
+    position: relative;
+    bottom: 1px;
+    padding: 5px 10px;
+    padding-top: 9px;
+    font-size: 16px;
+    color:rgba(255,255,255,1);
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+
+
+.findlsnote ul {
+    width: 100%;
+    padding-left: 0;
+}
+
+.findlsnote ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.findlsnote a {
+    color: black !important;
+    margin-right: 0 !important;
+    position: static !important;
+    float: none !important;
+}
+
+.notfound {
+    width: auto;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    border: 1px solid white;
+}
+
+.none {
+    width: 300px;
+    padding: 5px 10px;
+    color: white;
+    font-size: 16px !important;
+    font-family: 'Roboto Condensed' !important;
+    text-align: center;
+    background: rgba(255, 84, 84, 0.87);
+    box-sizing: border-box;
+    position: relative;
+    bottom: 5px;
+    border-radius: 3px;
+    transition: all .5s ease;
+}
+
+.nav {
+    width: 20px;
+    height: auto;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    z-index: 1000;
+    margin-top: -60px;
+}
+
+.nav div {
+    width: 20px;
+    height: 20px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.border {
+    border: 2px solid white;
+}
+
+.blackc {
+    background: url(vecher-noch-svet-doroga-vyderzhka-zima-sneg-les-gory1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.greyc {
+    background: #191919;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Roboto';font-weight: bold;
+}
+
+.bluec {
+    background: #3a5aa6;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Roboto';font-weight: bold;
+}
+
+.orc {
+    background: #ff9429;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Roboto';font-weight: bold;
+}
+
+.findlsnote ul li:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+.findls {
+    display: inline-block;
+    vertical-align: top;
+    background: transparent;
+    border-radius: 2px;
+    position: relative;
+    top:17px;
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+}
+
+.b {
+    background-color: #3a5aa6;
+}
+
+.menu ul div {
+    color:rgba(255,255,255,0.9);
+    background: rgba(50,50,50,1);
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all .2s linear;
+    border-radius:5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all .5s ease;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+p {
+    color:rgba(0,0,0,0.7);
+    font-family: 'Roboto Condensed',sans-serif; 
+    font-size: 20px;
+    padding-left: 50px;
+    text-align: justify;
+    padding-right: 500px;
+}
+
+.form2 {
+    width: 100%;
+    height: 135px;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    bottom: 35px;
+}
+
+.main form {
+    text-align: left;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -150px;
+}
+
+#findlsform {
+    position: relative;
+}
+
+::-webkit-input-placeholder {color: rgba(0,0,0,0.5);transition: all .5s ease;}
+::-moz-placeholder          {color: rgba(0,0,0,0.5);transition: all .5s ease;}/* Firefox 19+ */
+:-moz-placeholder           {color: rgba(0,0,0,0.5);transition: all .5s ease;}/* Firefox 18- */
+:-ms-input-placeholder      {color: rgba(0,0,0,0.5);transition: all .5s ease;}
+
+input:focus::-webkit-input-placeholder {color: rgba(0,0,0,0.2);}
+input:focus::-moz-placeholder          {color: rgba(0,0,0,0.2);}/* Firefox 19+ */
+input:focus:-moz-placeholder           {color: rgba(0,0,0,0.2);}/* Firefox 18- */
+input:focus:-ms-input-placeholder      {color: rgba(0,0,0,0.2);}
+
+.findls input::-webkit-input-placeholder{color: rgba(255,255,255,0.3);transition: all .5s ease;}
+.findls input:focus::-webkit-input-placeholder {color: rgba(255,255,255,0.1);}
